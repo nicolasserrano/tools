@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+number = 0;
+function set() {
+  index = 0
+  a=document.getElementById('ta').value
+  list=a.trim().split('\n')
+  document.body.style.backgroundImage = "url(" + list[index] + ")";
+}
+
+document.addEventListener("keydown", keyDownTextField, false);
+
+function keyDownTextField(e) {
+
+var keyCode = e.keyCode;
+  if ((e.which || e.keyCode) == 116) e.preventDefault();
+  if(keyCode>=96 && keyCode <= 105) {  //it's a number
+    number = number*10 + keyCode - 96
+  }
+  if(keyCode==13) {  //it's the enter key, go the number - 1 image
+    index = number - 1;
+    number = 0;
+    document.body.style.backgroundImage = "url(" + list[index] + ")";
+  }
+  
+  if(keyCode==34 || keyCode == 33 || keyCode == 37 || keyCode == 39) {
+    if(keyCode==34 || keyCode == 39) {
+        index++;
+        if (index == list.length) {
+            index = 0;
+        }
+    } else if(keyCode==33 || keyCode == 37) {
+        index--;
+        if (index < 0) {
+            index = list.length - 1;
+        }
+    }
+    document.body.style.backgroundImage = "url(" + list[index] + ")";
+  //alert("You hit the key: " + keyCode);
+  }
+}
+
+//
+//function to get images from a web page, example pexels.com
+//  Execute get() on the page, copy the result from the console and paste on the textarea
+function get() {
+    out="";
+    il=document.getElementsByTagName("img")
+    for (i=0;i<il.length;i++) {
+       out += il[i].src +'\n';
+    }
+    console.log(out);
+}
+function crImage(elem,n) {
+    var x = document.createElement("IMG");
+    x.setAttribute("src", elem);
+    x.setAttribute("width", "40");
+    x.setAttribute("height", "30");
+    x.setAttribute("alt", "img " + n);
+    document.body.appendChild(x);
+}
+function miniImages() {
+    for (i=0;i<list.length;i++) {
+           crImage(list[i],name);
+    }
+}
+</script>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+textarea {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+}
+</style>
+</head>
+<body onload="set()">
+
+<textarea id='ta' onChange='set()'>
+https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/103567/pexels-photo-103567.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/312105/pexels-photo-312105.jpeg?auto=compress&cs=tinysrgb&h=350
+https://images.pexels.com/photos/218999/pexels-photo-218999.jpeg?auto=compress&cs=tinysrgb&h=350
+</textarea>
+</body>
+</html>
