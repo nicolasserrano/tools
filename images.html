@@ -5,6 +5,7 @@
 
 <script>
 number = 0;
+blank = false;
 function set() {
   index = 0
   a=document.getElementById('ta').value
@@ -22,12 +23,22 @@ var keyCode = e.keyCode;
     number = number*10 + keyCode - 96
   }
   if(keyCode==13) {  //it's the enter key, go the number - 1 image
+    blank = false;
     index = number - 1;
     number = 0;
     document.body.style.backgroundImage = "url(" + list[index] + ")";
   }
+  if(keyCode==66) {  //it's the b key, keep blank or return
+    blank = !blank
+    if (blank) {
+        document.body.style.backgroundImage = "url(" + "" + ")";
+    } else {
+        document.body.style.backgroundImage = "url(" + list[index] + ")";
+    }
+  }
   
   if(keyCode==34 || keyCode == 33 || keyCode == 37 || keyCode == 39) {
+    blank = false;
     if(keyCode==34 || keyCode == 39) {
         index++;
         if (index == list.length) {
