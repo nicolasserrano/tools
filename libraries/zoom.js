@@ -1,4 +1,4 @@
-document.addEventListener("load",addZoomRotate);
+document.body.addEventListener("load",addZoomRotate);
 function addZoomRotate() {
   var elements = document.getElementsByClassName('zoom_rotate');
   for (i=0; i<elements.length;i++) {
