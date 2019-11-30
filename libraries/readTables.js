@@ -6,6 +6,10 @@ function readTables() {
     console.log("table " + it);
     for (i=1;i<elements.length;i++){
       console.log(i + " " + elements[i].children[0].textContent  + "-" + elements[i].children[1].textContent);
+      image = {}
+      image.key = elements[i].children[0].textContent;
+      image.url = elements[i].children[1].textContent;
+      imagesList.push(image);
     }
   }
 }
