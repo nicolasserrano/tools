@@ -13,4 +13,18 @@ function readTables() {
     }
   }
 }
+function getImageByKey(key) {
+  for (i=0;i<imagesList.length;i++){
+    if (imagesList[i].key == key) return imagesList[i];
+  }
+}
+function setImagesSrc() {
+  images = document.getElementsByClassName("images")[0].closest("div").getElementsByTagName("img")
+  for (im=1;im<images.length;im++){
+    image = getImageByKey(images[im].alt);
+    images[im].src = image.url;
+  }
+}
 readTables();
+setImagesSrc();
+
