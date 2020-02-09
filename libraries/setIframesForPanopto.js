@@ -5,7 +5,11 @@ function setIframes() {
     //links[i].target = "_blank";
     if (links[i].href.search("panopto.eu") >= 0 || links[i].classList.contains('iframe')) {
       ifr = document.createElement('iframe');
-      ifr.src = links[i].href.replace("Viewer", "Embed") + "&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all";
+      if (links[i].href.search("panopto.eu") >= 0) {  // for panopto
+        ifr.src = links[i].href.replace("Viewer", "Embed") + "&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all";
+      } else {  // for youtube
+        ifr.src = links[i].href;
+      }
       ifr.width=400;
       ifr.height=225;
       links[i].parentNode.insertBefore(document.createElement("br"), links[i].nextSibling)
