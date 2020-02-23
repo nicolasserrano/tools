@@ -1,3 +1,4 @@
+console.log("Para descargar los videos, definir la variable download=1; y hacer clic en 'Mostrar vista previa de videos'");
 function Download(iframeId, url) {  // https://stackoverflow.com/questions/3749231/download-file-using-javascript-jquery
     document.getElementById(iframeId).src = url;
 };
