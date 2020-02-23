@@ -7,7 +7,7 @@ function setIframes() {
   for(var i=0; i<len; i++) {
     //links[i].target = "_blank";
     if (links[i].href.search("panopto.eu") >= 0 || links[i].classList.contains('iframe')) {
-      if ( typeof donwload !== 'undefined') && donwload != "No") {
+      if ( typeof donwload !== 'undefined' && donwload != "No") {
         if (links[i].href.search("panopto.eu") >= 0) {  // check it is a panopto video
           urlOriginal = links[i].href;
           urlDownload = urlOriginal.replace("Pages/Viewer.aspx?id=", "Podcast/Download/") + ".mp4?mediaTargetType=videoPodcast";
