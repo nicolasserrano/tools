@@ -1,5 +1,5 @@
-function Download(url) {  // https://stackoverflow.com/questions/3749231/download-file-using-javascript-jquery
-    document.getElementById('download_iframe').src = url;
+function Download(iframeId, url) {  // https://stackoverflow.com/questions/3749231/download-file-using-javascript-jquery
+    document.getElementById(iframeId).src = url;
 };
 function setIframes() {
   var links = document.getElementsByTagName('a');
@@ -7,11 +7,15 @@ function setIframes() {
   for(var i=0; i<len; i++) {
     //links[i].target = "_blank";
     if (links[i].href.search("panopto.eu") >= 0 || links[i].classList.contains('iframe')) {
-      if ( typeof donwload !== 'undefined' && donwload != "No") {
+      if ( typeof download !== 'undefined' && download != "No") {
         if (links[i].href.search("panopto.eu") >= 0) {  // check it is a panopto video
+          ifr = document.createElement('iframe');
+          iframeId = "if_" + i;
+          ifr.setAttribute("id", iframeId);
+          links[i].parentNode.insertBefore(ifr, links[i].nextSibling)
           urlOriginal = links[i].href;
           urlDownload = urlOriginal.replace("Pages/Viewer.aspx?id=", "Podcast/Download/") + ".mp4?mediaTargetType=videoPodcast";
-          Download(urlDownload);
+          Download(iframeId, urlDownload);
         }
       } else {  // end of download
         ifr = document.createElement('iframe');
