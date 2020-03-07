@@ -2,7 +2,7 @@ console.log("Para descargar los videos, definir la variable download=1; o hacer 
 function Download(iframeId, url) {  // https://stackoverflow.com/questions/3749231/download-file-using-javascript-jquery
     document.getElementById(iframeId).src = url;
 };
-function setIframes() {
+function setIframes(element) {
   var links = document.getElementsByTagName('a');
   var len = links.length;
   for(var i=0; i<len; i++) {
@@ -33,4 +33,21 @@ function setIframes() {
       links[i].parentNode.insertBefore(document.createElement("br"), links[i].nextSibling)
     }
   }
+  setH = document.createElement("a")
+  setH.setAttribute("onclick", "setHorizontal()")
+  setH.setAttribute("id", "setH")
+  setH.setAttribute("href", "javascript:void(0);")
+  setH.innerText="Poner en horizontal"
+  element.parentNode.insertBefore(document.createTextNode(""), element.nextSibling)
+  element.parentNode.insertBefore(setH, element.nextSibling)
+}
+
+function setHorizontal(){
+  var sheet = window.document.styleSheets[0];
+  sheet.insertRule('td:nth-child(3) br { display: none; }', sheet.cssRules.length);
+  sheet.insertRule('td:nth-child(3) p { display: inline; }', sheet.cssRules.length);
+  sheet.insertRule('td:nth-child(3) * { font-size: 0px; }', sheet.cssRules.length);
+  sheet.insertRule('td:nth-child(3) span * { font-size: 0px; }', sheet.cssRules.length);
+  sheet.insertRule('td:nth-child(3) { font-size: 0px; }', sheet.cssRules.length);
+  sheet.insertRule('table { width: max-content; }', sheet.cssRules.length);
 }
