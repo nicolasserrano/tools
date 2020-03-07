@@ -3,7 +3,12 @@ function Download(iframeId, url) {  // https://stackoverflow.com/questions/37492
     document.getElementById(iframeId).src = url;
 };
 function setIframes(element) {
-  var links = document.getElementsByTagName('a');
+  var links;
+  if (element == "all") {  // all the links of the page
+    links = document.getElementsByTagName('a');
+  } else {  // all the links of the row (TR)
+    links = element.parentNode.parentNode.getElementsByTagName('a');
+  }
   var len = links.length;
   for(var i=0; i<len; i++) {
     //links[i].target = "_blank";
@@ -37,7 +42,7 @@ function setIframes(element) {
   setH.setAttribute("onclick", "setHorizontal()")
   setH.setAttribute("id", "setH")
   setH.setAttribute("href", "javascript:void(0);")
-  setH.innerText="Poner en horizontal"
+  setH.innerText="SH"
   element.parentNode.insertBefore(document.createTextNode(""), element.nextSibling)
   element.parentNode.insertBefore(setH, element.nextSibling)
 }
