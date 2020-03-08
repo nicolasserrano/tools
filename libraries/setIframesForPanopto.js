@@ -53,7 +53,7 @@ function setIframes(element, iTr) {
     }
   }
   setH = document.createElement("a")
-  setH.setAttribute("onclick", "setHorizontal()")
+  setH.setAttribute("onclick", "setHorizontal(" + iTr + ")")
   setH.setAttribute("id", "setH")
   setH.setAttribute("href", "javascript:void(0);")
   setH.innerText="SH"
@@ -61,17 +61,18 @@ function setIframes(element, iTr) {
   element.parentNode.insertBefore(setH, element.nextSibling)
 }
 
-function setHorizontal(){
+function setHorizontal(iTr){
+  if (iTr == 0) all = true;
   var sheet = window.document.styleSheets[0];
-  if (all) {
+  if (!all) {
       classValue = "tr.horizontalReady ";
   } else {
       classValue = "";
   }
-  sheet.insertRule('td:nth-child(3) br { display: none; }', sheet.cssRules.length);
-  sheet.insertRule('td:nth-child(3) p { display: inline; }', sheet.cssRules.length);
-  sheet.insertRule('td:nth-child(3) * { font-size: 0px; }', sheet.cssRules.length);
-  sheet.insertRule('td:nth-child(3) span * { font-size: 0px; }', sheet.cssRules.length);
-  sheet.insertRule('td:nth-child(3) { font-size: 0px; }', sheet.cssRules.length);
-  sheet.insertRule('table { width: max-content; }', sheet.cssRules.length);
+  sheet.insertRule(classValue + 'td:nth-child(3) br { display: none; }', sheet.cssRules.length);
+  sheet.insertRule(classValue + 'td:nth-child(3) p { display: inline; }', sheet.cssRules.length);
+  sheet.insertRule(classValue + 'td:nth-child(3) * { font-size: 0px; }', sheet.cssRules.length);
+  sheet.insertRule(classValue + 'td:nth-child(3) span * { font-size: 0px; }', sheet.cssRules.length);
+  sheet.insertRule(classValue + 'td:nth-child(3) { font-size: 0px; }', sheet.cssRules.length);
+  sheet.insertRule(classValue + 'table { width: max-content; }', sheet.cssRules.length);
 }
