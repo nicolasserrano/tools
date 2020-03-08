@@ -43,7 +43,7 @@ function setIframes(element, iTr) {
       } else {  // end of download
         ifr = document.createElement('iframe');
         if (links[i].href.search("panopto.eu") >= 0) {  // for panopto
-          ifr.src = links[i].href.replace("Viewer", "Embed") + "&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all";
+          ifr.setAttribute("src", links[i].href.replace("Viewer", "Embed") + "&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all");
           ifr.setAttribute("width",  "'" + iframeWidth + "'");
           ifr.setAttribute("height", "'" + ifremeHeight + "'");
         } else {  // for youtube
