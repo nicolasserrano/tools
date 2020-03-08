@@ -25,7 +25,7 @@ function setIframes(element, iTr) {
     trElement.setAttribute("class", "horizontalReady");
   }
   var len = links.length;
-  iframeWidth=document.getElementById("iframeSize");
+  iframeWidth=document.getElementById("iframeSize").value;
   ifremeHeight = iframeWidth*9/16;
   for(var i=0; i<len; i++) {
     //links[i].target = "_blank";
