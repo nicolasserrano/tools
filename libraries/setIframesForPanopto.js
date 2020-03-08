@@ -4,7 +4,7 @@ function Download(iframeId, url) {  // https://stackoverflow.com/questions/37492
 };
 function setIframes(element) {
   var links;
-  if (element == "all") {  // all the links of the page
+  if (element.parentNode.parentNode.tagName != "TR") {  // all the links of the page
     links = document.getElementsByTagName('a');
   } else {  // all the links of the row (TR)
     links = element.parentNode.parentNode.getElementsByTagName('a');
