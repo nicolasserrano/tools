@@ -11,7 +11,7 @@ function setVideoIcons(element) {
     ntr = trArray.length;
     for (i=0;i<ntr;i++){
         tdEl0 = trArray[i].getElementsByTagName("TD")[0];
-        tdEl0.innerHTML += "<svg onclick=setIframes(this," + i + ") height='24px' width='24px' class='icon-nav-video'><use href='#icon-nav-videos'></use></svg>"
+        tdEl0.innerHTML += "<svg onclick=setIframes(this," + i + ") height='24px' width='24px' class='icon-nav-video'><use href='https://nicolasserrano.github.io/tools/libraries/video.svg#icon-nav-videos'></use></svg>"
     }
 }
 function setIframes(element, iTr) {
