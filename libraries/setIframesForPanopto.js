@@ -57,7 +57,7 @@ function setIframes(element, iTr) {
   setH.setAttribute("onclick", "setHorizontal(" + iTr + ")")
   setH.setAttribute("id", "setH")
   setH.setAttribute("href", "javascript:void(0);")
-  setH.innerText="<BR>Horizontal"
+  setH.innerHTML="<BR>Horizontal"
   element.parentNode.insertBefore(document.createTextNode(""), element.nextSibling)
   element.parentNode.insertBefore(setH, element.nextSibling)
 }
