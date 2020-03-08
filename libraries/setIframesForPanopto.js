@@ -62,9 +62,8 @@ function setIframes(element, iTr) {
 }
 
 function setHorizontal(iTr){
-  if (iTr == 0) all = true;
   var sheet = window.document.styleSheets[0];
-  if (!all) {
+  if (iTr != 0) {  // only apply to rows (tr) with class horizontalReady
       classValue = "tr.horizontalReady ";
   } else {
       classValue = "";
