@@ -19,7 +19,9 @@ function setIframes(element, iTr) {
   if (iTr == 0) {  // if the call comes from the first row, set iframes for the links of the page
     links = document.getElementsByTagName('a');
   } else {  // all the links of the row (TR)
-    links = element.closest("TR").getElementsByTagName('a');
+    trElement = element.closest("TR");
+    links = trElement.getElementsByTagName('a');
+    trElement.setAttribute("class", "horizontalReady");
   }
   var len = links.length;
   for(var i=0; i<len; i++) {
@@ -61,6 +63,11 @@ function setIframes(element, iTr) {
 
 function setHorizontal(){
   var sheet = window.document.styleSheets[0];
+  if (all) {
+      classValue = "tr.horizontalReady ";
+  } else {
+      classValue = "";
+  }
   sheet.insertRule('td:nth-child(3) br { display: none; }', sheet.cssRules.length);
   sheet.insertRule('td:nth-child(3) p { display: inline; }', sheet.cssRules.length);
   sheet.insertRule('td:nth-child(3) * { font-size: 0px; }', sheet.cssRules.length);
