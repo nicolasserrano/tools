@@ -2,12 +2,24 @@ console.log("Para descargar los videos, definir la variable download=1; o hacer 
 function Download(iframeId, url) {  // https://stackoverflow.com/questions/3749231/download-file-using-javascript-jquery
     document.getElementById(iframeId).src = url;
 };
-function setIframes(element) {
+/**
+ * setVideoIcons sets and icon in the field cell (TD) of each table row (TR) with a call to the setIframes() function
+ */
+function setVideoIcons(element) {
+    tableEl = element.closest("TABLE");
+    trArray = tableEl.getElementsByTagName("TR");
+    ntr = trArray.length;
+    for (i=0;i<ntr;i++){
+        tdEl0 = trArray[i].getElementsByTagName("TD")[0];
+        tdEl0.innerHTML += "<svg onclick=setIframes(this," + i + ") height='24px' width='24px' class='icon-nav-video'><use href='#icon-nav-videos'></use></svg>"
+    }
+}
+function setIframes(element, iTr) {
   var links;
-  if (element.parentNode.parentNode.tagName != "TR") {  // all the links of the page
+  if (iTr == 0) {  // if the call comes from the first row, set iframes for the links of the page
     links = document.getElementsByTagName('a');
   } else {  // all the links of the row (TR)
-    links = element.parentNode.parentNode.getElementsByTagName('a');
+    links = element.closest("TR").getElementsByTagName('a');
   }
   var len = links.length;
   for(var i=0; i<len; i++) {
