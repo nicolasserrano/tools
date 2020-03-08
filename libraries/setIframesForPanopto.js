@@ -44,8 +44,8 @@ function setIframes(element, iTr) {
         ifr = document.createElement('iframe');
         if (links[i].href.search("panopto.eu") >= 0) {  // for panopto
           ifr.src = links[i].href.replace("Viewer", "Embed") + "&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all";
-          ifr.width = iframeWidth;
-          ifr.height= ifremeHeight;
+          ifr.setAttribute(width,  iframeWidth);
+          ifr.setAttribute(height, ifremeHeight;
         } else {  // for youtube
           ifr.src = links[i].href.replace("watch?v=","embed/");
         }
