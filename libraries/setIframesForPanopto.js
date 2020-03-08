@@ -48,8 +48,8 @@ function setIframes(element, iTr) {
           ifr.src = links[i].href.replace("watch?v=","embed/");
         }
       }
-      ifr.width=ifremeHeight;
-      ifr.height=225;
+      ifr.width= iframeWidth;
+      ifr.height=ifremeHeight;
       links[i].parentNode.insertBefore(document.createElement("br"), links[i].nextSibling)
       links[i].parentNode.insertBefore(ifr, links[i].nextSibling)
       links[i].parentNode.insertBefore(document.createElement("br"), links[i].nextSibling)
