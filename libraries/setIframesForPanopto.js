@@ -25,13 +25,18 @@ function setIframes(element, iTr) {
     trElement.setAttribute("class", "horizontalReady");
   }
   var len = links.length;
-  iframeWidth=document.getElementById("iframeSize").value;
+  ifs=document.getElementById("iframeSize");
+  if (ifs != null) {
+    iframeWidth=ifs.value;
+  } else {
+    iframeWidth = 400;
+  }
   ifremeHeight = iframeWidth*9/16;
   for(var i=0; i<len; i++) {
     //links[i].target = "_blank";
-    if (links[i].href.search("panopto.eu") >= 0 || links[i].classList.contains('iframe')) {
+    if (links[i].href.search("Panopto/Pages/Viewer.aspx") >= 0 || links[i].classList.contains('iframe')) {
       if ( typeof download !== 'undefined' && download != "No") {
-        if (links[i].href.search("panopto.eu") >= 0) {  // check it is a panopto video
+        if (links[i].href.search("Panopto/Pages/Viewer.aspx") >= 0) {  // check it is a panopto video
           ifr = document.createElement('iframe');
           iframeId = "if_" + i;
           ifr.setAttribute("id", iframeId);
@@ -42,7 +47,7 @@ function setIframes(element, iTr) {
         }
       } else {  // end of download
         ifr = document.createElement('iframe');
-        if (links[i].href.search("panopto.eu") >= 0) {  // for panopto
+        if (links[i].href.search("Panopto/Pages/Viewer.aspx") >= 0) {  // for panopto
           ifr.setAttribute("src", links[i].href.replace("Viewer", "Embed") + "&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all");
         } else {  // for youtube
           ifr.src = links[i].href.replace("watch?v=","embed/");
@@ -55,15 +60,17 @@ function setIframes(element, iTr) {
       links[i].parentNode.insertBefore(document.createElement("br"), links[i].nextSibling)
     }
   }
-  setH = document.createElement("a")
+    setH = document.createElement("a")
   setH.setAttribute("onclick", "setHorizontal(" + iTr + ")")
   setH.setAttribute("id", "setH")
   setH.setAttribute("href", "javascript:void(0);")
-  setH.innerHTML="<BR>Horizontal"
-  element.parentNode.insertBefore(document.createTextNode(""), element.nextSibling)
-  element.parentNode.insertBefore(setH, element.nextSibling)
+  setH.innerHTML="<BR>Horizontal";
+  if (element != null)
+    element.parentNode.insertBefore(document.createTextNode(""), element.nextSibling)
+    element.parentNode.insertBefore(setH, element.nextSibling)
+  }
 }
-
+ 
 function setHorizontal(iTr){
   var sheet = window.document.styleSheets[0];
   if (iTr != 0) {  // only apply to rows (tr) with class horizontalReady
