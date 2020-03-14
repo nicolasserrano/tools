@@ -65,7 +65,7 @@ function setIframes(element, iTr) {
   setH.setAttribute("id", "setH")
   setH.setAttribute("href", "javascript:void(0);")
   setH.innerHTML="<BR>Horizontal";
-  if (element != null)
+  if (element != null) {
     element.parentNode.insertBefore(document.createTextNode(""), element.nextSibling)
     element.parentNode.insertBefore(setH, element.nextSibling)
   }
