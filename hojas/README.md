@@ -1,6 +1,8 @@
 ## Ejemplos de hoja de cáculo  para IRPF
 - [Principales aspectos del impuesto (IRPF)](https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/renta/principales-aspectos)  
+- [Principales aspectos del impuesto (IRPF 2019)](https://www.gipuzkoa.eus/documents/2456431/3139313/Principales+aspectos+IRPF+2019+CAS/f5d770ae-405f-0fdd-747d-2ad01f3b357b)
 - [Presupuestos de 2019](http://www4.gipuzkoa.net/ogasuna/presupuestos/2019/Ppto2019/pdfs/0/Disposiciones.pdf)  
+- [Presupuestos de 2020, sin datos de IRPF](http://www7.gipuzkoa.net/presupuestos/2020/Ppre2020/pdfs/0/Disposiciones.pdf)  
 - [Ejemplos de propuestas](https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/109/2018/propuesta-autoliquidacion)
  
  ## Ejemplos de hojas de cálculo con macros
