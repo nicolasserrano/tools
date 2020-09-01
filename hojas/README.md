@@ -8,6 +8,8 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3e3bfb
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=faa4f545-3e17-449a-a512-ac29010a610f' target='_blank'>05. Nombres de celdas</a><BR>
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1e0ff9c-b80b-4c97-a90e-ac29010c55a9' target='_blank'>06. Formulas matriciales</a><BR>
 
+## Ejercicios
+En la hoja de Principales aspectos del impuesto (IRPF 2019), crear la tabla de Tarifa general de la forma más general y con el menor número de datos tecleados.
 
 ## Ejemplos de hoja de cáculo  para IRPF
 - [Principales aspectos del impuesto (IRPF)](https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/renta/principales-aspectos)  
