@@ -9,6 +9,7 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=faa4f5
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1e0ff9c-b80b-4c97-a90e-ac29010c55a9' target='_blank'>06. Formulas matriciales</a><BR>
  
 ## Documentos
+- Presentación [Personal Computers History and Spreadsheets](PersonalComputersHistory.pdf)
 - Página y simulador de [Visicalc](https://www.pcjs.org/software/pcx86/app/other/visicalc/1981/)  
 - Video de [Dan Bricllin](https://www.ted.com/talks/dan_bricklin_meet_the_inventor_of_the_electronic_spreadsheet)  
 - Documento: [El camino a la Era Digital](El%20camino%20a%20la%20Era%20Digital.pdf), páginas 5b, 6 y 7a.
