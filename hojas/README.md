@@ -11,7 +11,7 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1e0ff
 ## Documentos
 - Página y simulador de [Visicalc](https://www.pcjs.org/software/pcx86/app/other/visicalc/1981/)  
 - Video de [Dan Bricllin](https://www.ted.com/talks/dan_bricklin_meet_the_inventor_of_the_electronic_spreadsheet)  
-- Documento: [El camino a la Era Digital](El camino a la Era Digital.pdf), páginas 5b, 6 y 7a.
+- Documento: [El camino a la Era Digital](El%20camino%20a%20la%20Era%20Digital.pdf), páginas 5b, 6 y 7a.
 
 ## Ejercicios
 - En la página de [Principales aspectos del impuesto (IRPF 2019)](https://www.gipuzkoa.eus/documents/2456431/3139313/Principales+aspectos+IRPF+2019+CAS/f5d770ae-405f-0fdd-747d-2ad01f3b357b), crear la tabla de Tarifa general de la forma más general y con el menor número de datos tecleados.
