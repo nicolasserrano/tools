@@ -18,7 +18,7 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1e0ff
 - En la página de [Principales aspectos del impuesto (IRPF 2019)](https://www.gipuzkoa.eus/documents/2456431/3139313/Principales+aspectos+IRPF+2019+CAS/f5d770ae-405f-0fdd-747d-2ad01f3b357b), crear la tabla de Tarifa general de la forma más general y con el menor número de datos tecleados.
 - En la hoja [Plantilla_IRPF_2019.xlsx](Plantilla_IRPF_2019.xlsx) analizar la estructura de la misma y compararla con la de la hoja [Plantilla_IRPF_2018_A3.xlsx](Plantilla_IRPF_2018_A3.xlsx)
 
- ## Ejemplos de hojas de cálculo con macros
+ ## Ejemplos de hojas de cálculo con macros  
  - [Gestión de tareas](http://www.nicolasserrano.com/TimeManagement)
  - [Matrices de transformación y cámara](graficos/matrix2.xls)
  - [Generación de imágenes](graficos/light.xls)
