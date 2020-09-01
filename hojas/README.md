@@ -1,4 +1,4 @@
-[Acceso a ficheros](https://github.com/nicolasserrano/tools/tree/master/hojas)
+[Acceso a ficheros](https://github.com/nicolasserrano/tools/tree/master/hojas) - [View](https://nicolasserrano.github.io/tools/hojas/)
 
 ## Videos de introducción a Excel  
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=672b939a-4394-4148-8e89-ac2900b92617' target='_blank'>01. Contenido y referencias absolutas y relativas</a><BR>
