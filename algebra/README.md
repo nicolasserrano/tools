@@ -1,4 +1,6 @@
 # Ejemplos de algebra
-- [Plane1](Plane1.html)
-- [Plane2](Plane2.html)
-- [Plane3](Plane3.html)
+- [Planes1](Planes1.html)
+- [Planes2](Planes2.html)
+- [Planes3](Planes3.html)
+
+[View](http://nicolasserrano.github.io/tools/algebra/) - [Edit](https://github.com/nicolasserrano/tools/edit/master/algebra/README.md)
