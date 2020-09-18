@@ -1,5 +1,5 @@
 # Ejemplos de algebra
-- [Planes1](Planes1.html)
+- [Planes1](Planes.html)
 - [Planes2](Planes2.html)
 - [Planes3](Planes3.html)
 
