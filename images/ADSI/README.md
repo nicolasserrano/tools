@@ -12,8 +12,8 @@ https://unsplash.com/photos/SYTO3xs06fU
 
 4. Formularios  
 https://www.pexels.com/photo/person-using-macbook-pro-on-white-table-5077045/  
-<div class="js-copy-attribute-content photo-page__adp-cta__container__attribution">Photo by <strong><a href="https://www.pexels.com/@cottonbro?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">cottonbro</a></strong> from <strong><a href="https://www.pexels.com/photo/person-using-macbook-pro-on-white-table-5077045/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Pexels</a></strong></div>
+Photo by <strong><a href="https://www.pexels.com/@cottonbro?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">cottonbro</a></strong> from <strong><a href="https://www.pexels.com/photo/person-using-macbook-pro-on-white-table-5077045/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Pexels</a></strong>
 
 5. Informes  
 https://www.pexels.com/photo/man-using-a-printer-3201783/  
-<div class="js-copy-attribute-content photo-page__adp-cta__container__attribution">Photo by <strong><a href="https://www.pexels.com/@cottonbro?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">cottonbro</a></strong> from <strong><a href="https://www.pexels.com/photo/man-using-a-printer-3201783/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Pexels</a></strong></div>
+Photo by <strong><a href="https://www.pexels.com/@cottonbro?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">cottonbro</a></strong> from <strong><a href="https://www.pexels.com/photo/man-using-a-printer-3201783/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Pexels</a></strong>
