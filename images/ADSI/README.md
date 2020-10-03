@@ -22,3 +22,7 @@ Photo by <strong><a href="https://www.pexels.com/@cottonbro?utm_content=attribut
 pexels-cottonbro-3201783_400_225.jpg  
 https://www.pexels.com/photo/man-using-a-printer-3201783/  
 Photo by <strong><a href="https://www.pexels.com/@cottonbro?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">cottonbro</a></strong> from <strong><a href="https://www.pexels.com/photo/man-using-a-printer-3201783/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Pexels</a></strong>
+
+Video
+https://pixabay.com/videos/world-globe-international-global-1992/  
+Video by <a href="https://pixabay.com/users/bellergy-1846871/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1992">Bellergy RC</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1992">Pixabay</a>
