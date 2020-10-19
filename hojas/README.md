@@ -14,7 +14,7 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1e0ff
 ### Otros recursos
 - Presentación [Personal Computers History and Spreadsheets](PersonalComputersHistory.pdf)
 - Página y simulador de [Visicalc](https://www.pcjs.org/software/pcx86/app/other/visicalc/1981/)  
-- Video de [Dan Bricllin](https://www.ted.com/talks/dan_bricklin_meet_the_inventor_of_the_electronic_spreadsheet)  
+- Video de [Dan Bricklin](https://www.ted.com/talks/dan_bricklin_meet_the_inventor_of_the_electronic_spreadsheet)  
 
 ## Ejercicios  
 - En la página de [Principales aspectos del impuesto (IRPF 2019)](https://www.gipuzkoa.eus/documents/2456431/3139313/Principales+aspectos+IRPF+2019+CAS/f5d770ae-405f-0fdd-747d-2ad01f3b357b), crear la tabla de Tarifa general de la forma más general y con el menor número de datos tecleados.
