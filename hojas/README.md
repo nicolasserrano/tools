@@ -24,6 +24,27 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1e0ff
 - [Inversión](CloruroVinilo.xls)
 - [Matrices de transformación y cámara](graficos/matrix2.xls)
 
+## Videos de Programación de Excel con VBA
+
+### Tema 1. Programación de macros
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c09ce768-e29c-4cb3-8b31-ac60011ad147' target='_blank'>01. Programación de macros en Visual Basic</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2a708e68-0260-49f1-98f7-ac60011d67ba' target='_blank'>02. Gestor de macros</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d25cc3a2-3693-4b6d-b735-ac60012286bd' target='_blank'>03. Tipos de macros</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=99d901a5-a813-4bc6-8177-ac60012417e7' target='_blank'>04. Debugger</a><BR>
+
+### Tema 2. Lenguaje VBA
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=96bf136d-0a18-4e24-820f-ac620110c6c3' target='_blank'>01. Variables y constantes</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=99e2495a-9a06-4972-9841-ac62011307f7' target='_blank'>02. Condiciones</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=64ae4061-be5e-4edb-8a70-ac620114a9e4' target='_blank'>03. Bucle For</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3513ab98-d881-4062-ab06-ac62011becef' target='_blank'>04. Bucle Do Loop</a><BR>
+ 
+### Tema 3. Objetos en VBA
+
+### Tema 4. Interfaz de usuario
+
+### Tema 5. OLE y Acceso a bases de datos
+
+
 ## Ejemplos de hojas de cálculo con macros  
  - [Gestión de tareas](http://www.nicolasserrano.com/TimeManagement)
  - [Generación de imágenes](graficos/light.xls)
