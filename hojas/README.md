@@ -39,10 +39,26 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=64ae40
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3513ab98-d881-4062-ab06-ac62011becef' target='_blank'>04. Bucle Do Loop</a><BR>
  
 ### Tema 3. Objetos en VBA
+Propiedades, métodos y eventos  
+Gestión de objetos  
+Objeto Application  
+Objeto Workbook  
+Objeto Worksheet  
+Objeto Range  
 
 ### Tema 4. Interfaz de usuario
+Diálogos  
+Formularios  
+Controles  
+Eventos  
+Ejecución  
 
 ### Tema 5. OLE y Acceso a bases de datos
+Word  
+Outlook  
+DbEngine  
+Bases de datos  
+XmlHttpRequest  
 
 ## Prácticas de Programación de Excel con VBA  
 
