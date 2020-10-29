@@ -44,6 +44,22 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3513ab
 
 ### Tema 5. OLE y Acceso a bases de datos
 
+## Prácticas de Programación de Excel con VBA  
+
+### Práctica 1. Guardar fichero y bucles
+1. Crear una macro que guarde el documento activo con una macro.
+2. Modificar la macro, para que guarde el documento en la dirección que se indica en las celdas D1 y E1
+3. Modificar la macro, para que guarde en la dirección que se indica en las celdas D1, los ficheros con los nombres de las celdas seleccionadas, o del rango F1:H4
+
+### Práctica 2. Objetos en VBA  
+1. Crear una macro, que escribe siguiente información sobre la celda activa, en las celdas A1, B1 y C1.  
+      A1: fila de la celda activa  
+      B1: columna de la celda activa  
+      C1: fórmula de la celda activa  
+2. Crear una macro, que realiza la operación anterior para todas las celdas seleccionadas. Para cada celda seleccionada escribirá en las columnas A, B y C de la fila correspondiente, empezando en la fila 1.
+3. Crear una macro que realiza el proceso inverso de la 1, esto es, que lee la información de las columnas A1, B1 y C1 y escribe en la celda indicada por A1 y B1, la fórmula de C1.
+4. Crear una macro que realiza el proceso inverso anterior para todas las filas rellenas en las columnas A, B y C.
+5. Crear una macro que haga lo de la anterior y que cada vez que se encuentre en la columna A el texto “Worksheet”, cree una nueva hoja, con el nombre de la celda a su derecha (columna B) y las siguientes celdas se creen dicha hoja.
 
 ## Ejemplos de hojas de cálculo con macros  
  - [Gestión de tareas](http://www.nicolasserrano.com/TimeManagement)
