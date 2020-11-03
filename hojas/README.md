@@ -39,12 +39,12 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=64ae40
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3513ab98-d881-4062-ab06-ac62011becef' target='_blank'>04. Bucle Do Loop</a><BR>
  
 ### Tema 3. Objetos en VBA
-Propiedades, métodos y eventos  
-Gestión de objetos  
-Objeto Application  
-Objeto Workbook  
-Objeto Worksheet  
-Objeto Range  
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f957a61e-fce7-4574-8cfb-ac62011f928a' target='_blank'>01. Objetos en VBA</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c1f07d6d-fb06-400f-a9b3-ac63011cd48c' target='_blank'>02. Gestión de objetos</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=90ea29ff-c7b9-4851-aa0e-ac63011f3c3a' target='_blank'>03. Objeto Application</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7b326346-e1f3-47ec-bb56-ac6700f7fe51' target='_blank'>04. Objeto Workbook</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c848ec33-60f5-4481-aa5c-ac6700f9895a' target='_blank'>05. Objeto Woksheet</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=68abb2c5-4f0b-42ee-b689-ac6701010028' target='_blank'>06. Objeto Range</a><BR>
 
 ### Tema 4. Interfaz de usuario
 Diálogos  
