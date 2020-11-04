@@ -25,6 +25,7 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1e0ff
 - [Matrices de transformación y cámara](graficos/matrix2.xls)
 
 ## Videos de Programación de Excel con VBA
+[Presentación VBA](https://www.nicolasserrano.com/tools/hojas/Excel_VBA.pdf)
 
 ### Tema 1. Programación de macros
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c09ce768-e29c-4cb3-8b31-ac60011ad147' target='_blank'>01. Programación de macros en Visual Basic</a><BR>
