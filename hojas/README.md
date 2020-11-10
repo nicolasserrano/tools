@@ -48,18 +48,18 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c848ec
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=68abb2c5-4f0b-42ee-b689-ac6701010028' target='_blank'>06. Objeto Range</a><BR>
 
 ### Tema 4. Interfaz de usuario
-Diálogos  
-Formularios  
-Controles  
-Eventos  
-Ejecución  
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8003ee6-a2a5-44bf-8e35-ac6e010441e6' target='_blank'>01. Diálogos</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9211e3b6-4fa3-4171-b7ee-ac6e010aca85' target='_blank'>02. Formularios</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=278e3137-03da-478a-9683-ac6e010bb9d6' target='_blank'>03. Controles</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=490d53c5-233b-4b5d-b99b-ac6e010d19c3' target='_blank'>04. Eventos</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=93a2b4bc-7288-4b72-8863-ac6e010dd590' target='_blank'>05. Ejecución</a><BR>
 
 ### Tema 5. OLE y Acceso a bases de datos
-Word  
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6a5bceb8-e267-4362-bc68-ac6e0118167a' target='_blank'>01. Word</a><BR>
 Outlook  
 DbEngine  
 Bases de datos  
-XmlHttpRequest  
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a45c1b86-3ef5-4238-98d8-ac6e0131e756' target='_blank'>05. Conexión a internet</a><BR>
 
 ## Prácticas de Programación de Excel con VBA  
 
