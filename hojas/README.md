@@ -82,7 +82,7 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a45c1b
  - [Gestión de tareas](http://www.nicolasserrano.com/TimeManagement)
  - [Generación de imágenes](graficos/light.xls)
  - [Dibujo de líneas](graficos/lines.xls)
- - [Redes neuronales (en ADI Recursos parte 4)](https://aula-virtual.unav.edu/bbcswebdav/pid-1506931-dt-content-rid-4485541_1/xid-4485541_1)
+ - [Redes neuronales (en ADI -> Contenidos -> VBA)](https://aula-virtual.unav.edu/bbcswebdav/pid-1506931-dt-content-rid-4485541_1/xid-4485541_1)
   
 <!-- 
  - [Matrices de transformación y cámara](http://www4.tecnun.es/asignaturas/grafcomp/presentaciones/excel/matrix2.xls)
