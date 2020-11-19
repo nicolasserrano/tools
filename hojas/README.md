@@ -90,6 +90,14 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a45c1b
  - [Dibujo de líneas](http://www4.tecnun.es/asignaturas/grafcomp/presentaciones/excel/lines.xls)
 -->
 
+### Ejemplo de resolución de problema de panel de temperaturas
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=43dcde07-abbc-4f34-97fd-ac78011b806a' target='_blank'>01. Planteamiento del problema</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0396d763-eca1-4a06-9886-ac78011d9fe5' target='_blank'>02. Grabación de macro</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=772578f6-8352-4957-990e-ac780121393a' target='_blank'>03. Mínimos y máximos del rango</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=099394d9-8bea-48ca-813d-ac780123e995' target='_blank'>04. Ecuaciones</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5f92e3c7-5748-479a-a09f-ac78012a79ba' target='_blank'>05. Ecuaciones de celdas adiacentes</a><BR>
+Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a836d2f5-5618-4a04-ba9a-ac78012e5306' target='_blank'>06. Depuración y resolución del sistema</a><BR>
+
 ## Referencias para cálculo de IRPF
 - [Principales aspectos del impuesto (IRPF)](https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/renta/principales-aspectos)  
 - [Principales aspectos del impuesto (IRPF 2019)](https://www.gipuzkoa.eus/documents/2456431/3139313/Principales+aspectos+IRPF+2019+CAS/f5d770ae-405f-0fdd-747d-2ad01f3b357b)
