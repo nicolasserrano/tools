@@ -98,6 +98,8 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=099394
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5f92e3c7-5748-479a-a09f-ac78012a79ba' target='_blank'>05. Ecuaciones de celdas adiacentes</a><BR>
 Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a836d2f5-5618-4a04-ba9a-ac78012e5306' target='_blank'>06. Depuración y resolución del sistema</a><BR>
 
+- [Resolución en Excel (en ADI -> Contenidos -> VBA)](https://aula-virtual.unav.edu/bbcswebdav/pid-1508715-dt-content-rid-4505635_1/xid-4505635_1]
+
 ## Referencias para cálculo de IRPF
 - [Principales aspectos del impuesto (IRPF)](https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/renta/principales-aspectos)  
 - [Principales aspectos del impuesto (IRPF 2019)](https://www.gipuzkoa.eus/documents/2456431/3139313/Principales+aspectos+IRPF+2019+CAS/f5d770ae-405f-0fdd-747d-2ad01f3b357b)
