@@ -84,6 +84,7 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a45c1b
  - [Generación de imágenes](graficos/light.xls)
  - [Dibujo de líneas](graficos/lines.xls)
  - [Redes neuronales (en ADI -> Contenidos -> VBA)](https://aula-virtual.unav.edu/bbcswebdav/pid-1506931-dt-content-rid-4485541_1/xid-4485541_1)
+ - [Otras macros](Macros.md)
   
 <!-- 
  - [Matrices de transformación y cámara](http://www4.tecnun.es/asignaturas/grafcomp/presentaciones/excel/matrix2.xls)
