@@ -79,6 +79,16 @@ Video <a href='https://unav.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a45c1b
 4. Crear una macro que realiza el proceso inverso anterior para todas las filas rellenas en las columnas A, B y C.
 5. Crear una macro que haga lo de la anterior y que cada vez que se encuentre en la columna A el texto “Worksheet”, cree una nueva hoja, con el nombre de la celda a su derecha (columna B) y las siguientes celdas se creen dicha hoja.
 
+### Práctica 3. Interfaz de usuario en VBA  
+1. Crear una formulario con varios de los controles del Toolbox, con un evento en cada uno, a ser posible actuando el evento en el siguiente control.
+   Ejemplo, el primer control es un label de nombre Label1 que al clicar en él, escribe su Caption en el segundo control que un Textbox.
+```
+Private Sub Label1_Click()
+   TextBox1.Value = Label1.Caption
+End Sub
+```
+ 
+
 ## Ejemplos de hojas de cálculo con macros  
  - [Gestión de tareas](http://www.nicolasserrano.com/TimeManagement)
  - [Generación de imágenes](graficos/light.xls)
