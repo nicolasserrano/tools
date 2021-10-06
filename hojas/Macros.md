@@ -53,3 +53,13 @@ Sub Shapes()
 
 End Sub
 ```
+
+## Call to GetTedScript
+```
+
+Sub s1()
+    Dim id As Integer
+    id = 72
+    Call GetTedScript(id, "es", 1)
+    Call GetTedScript(id, "en", 2)
+End Sub
