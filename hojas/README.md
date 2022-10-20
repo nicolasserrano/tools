@@ -94,6 +94,7 @@ End Sub
  - [Generación de imágenes](graficos/light.xls)
  - [Dibujo de líneas](graficos/lines.xls)
  - [Redes neuronales (en ADI -> Contenidos -> VBA)](https://aula-virtual.unav.edu/bbcswebdav/pid-1506931-dt-content-rid-4485541_1/xid-4485541_1)
+ - [Dibujo de cuadrados](https://calm-mars-439.notion.site/Macro-dibujar-cuadrados-a96ff6fdf8ee4b438677a9150ac6412b)
  - [Otras macros](Macros.md)
   
 <!-- 
