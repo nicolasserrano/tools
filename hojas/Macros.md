@@ -12,7 +12,7 @@ End Sub
 
 ```
 Sub Shapes()
-  // from http://blog.livedoor.jp/hpylky07/archives/38210071.html
+  ' from http://blog.livedoor.jp/hpylky07/archives/38210071.html
 
     
     Dim ShpLPos As Long, ShpTPos As Long
