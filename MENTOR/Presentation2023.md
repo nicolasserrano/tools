@@ -60,7 +60,15 @@ Doctorando
   <li><a href="http://www.nicolasserrano.com/CCD.html">Creación de Contenido Digital</a></li>
 </ul>
 
+# Mentos Space
+
+https://mentor-tecnun.github.io/
+
 # Projects
-<iframe width="840"  height="472"" src="https://eimakatalogoa.eus/vufind/Author/Home?author=Nafarroako+Unibertsitatea" allowfullscreen></iframe>
+<iframe width="1040"  height="492"" src="https://eimakatalogoa.eus/vufind/Author/Home?author=Nafarroako+Unibertsitatea" allowfullscreen></iframe>
 
 # Plans
+- Libro matemáticas Curso 0
+- Telemaco (Tecnun learning material compilation) - Recopilación de materiales de aprendizaje en Tecnun
+- AI en educación en ingeniería ([Sesiones API OpenAI](http://www.nicolasserrano.com/r?http://www.nicolasserrano.com/digital/APIChatGPT.md))
+- EIMA 2023
