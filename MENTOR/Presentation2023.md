@@ -49,6 +49,7 @@ Doctorando
   <li><a href="https://en.ru.is/media/cdio2022/CDIO_2022_Proceedings.pdf#page=624">Aligning Stakeholder Needs with Program Requirements Using a Multi-Stakeholder Survey</a> in <a href="https://en.ru.is/cdio2022">18th CDIO</a></li>
   <li>Project in progress <a href="https://en.ru.is/media/cdio2022/02_CDIO2022_PiPs_v2022-06-08.pdf">Codex: An Open Source Online Platform to Perform Automated Evaluation</a> in <a href="https://en.ru.is/cdio2022">18th CDIO</a></li>
   <li>Paper <a href="https://ro.uow.edu.au/jutlp/vol19/iss5/07">Evaluation of emergency remote teaching during covid-19 lockdown in a Spanish university</a> in <a href="https://ro.uow.edu.au/jutlp/">Journal of University Teaching and Learning Practice (JUTLP)</a></li>
+  <li>Paper <a href="">Automated and continuous assessment implementation in a programming course</a> in <a href="https://onlinelibrary.wiley.com/journal/10990542">Computer Applications in Engineering Education</a></li>
 </ul>
 
 # Sessions
