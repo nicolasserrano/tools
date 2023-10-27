@@ -70,19 +70,19 @@ Doctorando
 # Plans
 <h2>Learning methodologies and materials</h2>
 - Tesis: Kevin, externa, continuación de Continuous Assessment
+- Active learning in Tecnun (Survey and session with Jim Widmann)
 - Telemaco (TEcnun LEarning MAterial COmpilation)
 - MENTOR Space, with pfc
 - EIMA 2023, Web y Estatistika
-- Codex: released as open-source: , for use in learning, publication, potential business model
+- Codex: released as open-source: for use in learning, publication, potential business model
 - Interactive Math Book Course 0
 - Interactive Programming Book Course 0
 - CDIO & Universitas
 <h2>AI in engineering education </h2>
-- Tesis: AI in education
 - Codex with AI assistant
 - Sessions of OpenAI API in engineering education
-- Active learning in Tecnun (Survey and session with Jim Widmann)
-- Proyetos fin carrera (AI, MENTOR Space)
+- Proyetos fin carrera en AI
+- Tesis: AI in education
 
 # AI Education
 <iframe src="https://unav.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=09efbcb1-c085-4c95-86b8-b0a000da48a5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="540" width="960" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Reproductor de vídeo Panopto incrustado"></iframe>
