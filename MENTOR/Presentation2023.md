@@ -68,17 +68,21 @@ Doctorando
 <iframe width="1040"  height="492"" src="https://eimakatalogoa.eus/vufind/Author/Home?author=Nafarroako+Unibertsitatea" allowfullscreen></iframe>
 
 # Plans
-- Tesis: Kevin, externa, AI, continuación de Active Learning
+<h2>Learning methodologies and materials</h2>
+- Tesis: Kevin, externa, continuación de Continuous Assessment
+- Telemaco (TEcnun LEarning MAterial COmpilation) - Recopilación de materiales de aprendizaje en Tecnun
+- MENTOR Space, with pfc
+- EIMA 2023, Web y Estatistika
+- Codex: to be released as open-source, for use in learning, publication generation, and as a potential business model
 - Interactive Math Book Course 0
 - Interactive Programming Book Course 0
-- Telemaco (TEcnun LEarning MAterial COmpilation) - Recopilación de materiales de aprendizaje en Tecnun
-- AI in engineering education [OpenAI API Sessions](http://www.nicolasserrano.com/r?http://www.nicolasserrano.com/digital/APIChatGPT.md)
+- CDIO & Universitas
+<h2>AI in engineering education </h2>
+- Tesis: AI in education
+- Codex with AI assistant
+- Sessions of OpenAI API in engineering education
 - Active learning in Tecnun (Survey and session with Jim Widmann)
-- Universitas
-- MENTOR Space
 - Proyetos fin carrera (AI, MENTOR Space)
-- EIMA 2023
-- Codex: to be released as open-source, for use in learning, publication generation, and as a potential business model
 
 # AI Education
 <iframe src="https://unav.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=09efbcb1-c085-4c95-86b8-b0a000da48a5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="540" width="960" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Reproductor de vídeo Panopto incrustado"></iframe>
