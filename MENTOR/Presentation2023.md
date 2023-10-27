@@ -70,10 +70,10 @@ Doctorando
 # Plans
 <h2>Learning methodologies and materials</h2>
 - Tesis: Kevin, externa, continuación de Continuous Assessment
-- Telemaco (TEcnun LEarning MAterial COmpilation) - Recopilación de materiales de aprendizaje en Tecnun
+- Telemaco (TEcnun LEarning MAterial COmpilation)
 - MENTOR Space, with pfc
 - EIMA 2023, Web y Estatistika
-- Codex: to be released as open-source, for use in learning, publication generation, and as a potential business model
+- Codex: released as open-source: , for use in learning, publication, potential business model
 - Interactive Math Book Course 0
 - Interactive Programming Book Course 0
 - CDIO & Universitas
