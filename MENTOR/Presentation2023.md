@@ -78,6 +78,7 @@ Doctorando
 - Interactive Math Book Course 0
 - Interactive Programming Book Course 0
 - CDIO & Universitas
+
 <h2>AI in engineering education </h2>
 - Codex with AI assistant
 - Sessions of OpenAI API in engineering education
