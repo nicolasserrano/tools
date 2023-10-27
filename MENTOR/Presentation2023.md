@@ -84,6 +84,6 @@ Doctorando
 - Proyetos fin carrera en AI
 - Tesis: AI in education
 
-# AI Education
+## AI Education
 <iframe src="https://unav.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=09efbcb1-c085-4c95-86b8-b0a000da48a5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="540" width="960" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Reproductor de vídeo Panopto incrustado"></iframe>
   
