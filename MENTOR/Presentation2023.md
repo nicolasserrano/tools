@@ -61,15 +61,14 @@ Doctorando
   <li><a href="http://www.nicolasserrano.com/CCD.html">Creación de Contenido Digital</a></li>
 </ul>
 
-# Mentos Space
-
-https://mentor-tecnun.github.io/
+<h1>MENTOR Space</h1>
+[Manual and videos](https://mentor-tecnun.github.io/)
 
 # Projects
 <iframe width="1040"  height="492"" src="https://eimakatalogoa.eus/vufind/Author/Home?author=Nafarroako+Unibertsitatea" allowfullscreen></iframe>
 
 # Plans
-- Tesis Kevin, externa, AI, continuación de Active Learning
+- Tesis: Kevin, externa, AI, continuación de Active Learning
 - Interactive Math Book Course 0
 - Interactive Programming Book Course 0
 - Telemaco (TEcnun LEarning MAterial COmpilation) - Recopilación de materiales de aprendizaje en Tecnun
