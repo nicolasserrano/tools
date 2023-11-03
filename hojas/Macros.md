@@ -7,6 +7,24 @@ Private Sub UserForm_Initialize()
 End Sub
 ```
 
+## Insert image from url
+
+```
+Sub InsertPicture()
+
+Dim sAddr As String
+Dim pic As Picture
+
+sAddr = "https://www.nicolasserrano.com/images/web.png"
+Set pic = ActiveSheet.Pictures.Insert(sAddr)
+
+With pic.ShapeRange
+    '.LockAspectRatio = msoFalse
+    '.Width = 80
+    '.Height = 80
+End With
+End Sub
+```
 
 ## Shapes
 
