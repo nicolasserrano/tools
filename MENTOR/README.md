@@ -5,3 +5,4 @@ Cursos y sesiones de [MENTOR](http://mentor.tecnun.es)
 -	[Creación de videos en Tecnun](http://www.nicolasserrano.com/Panopto/ )
 -	[Jornadas tecnun 2020](https://sites.google.com/theflippedclassroom.es/jornadastecnun2020)
 -	[Creación de Contenido Digital](http://www.nicolasserrano.com/CCD.html )
+-	Sesión sobre Innovación Educativa y Metodologías docentes. 1 de diciembre de 2023
