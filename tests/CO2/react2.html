@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO2 Monitor</title>
+  <link rel="stylesheet" href="CO2.css">
+</head>
+<body>
+  <div id="root"></div>
+  
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <!-- Babel for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function CO2Monitor() {
+      const [sessions, setSessions] = useState([]);
+      const [dateCreated, setDateCreated] = useState("");
+      const [reg, setReg] = useState(10);
+
+      // Function to fetch data
+      const fetchData = (registerCount = 6) => {
+        const url = `https://api.thingspeak.com/channels/1573872/feed.json?&offset=0&results=${registerCount}`;
+        fetch(url)
+          .then(response => response.json())
+          .then(data => {
+            setSessions(data.feeds || []);
+            setDateCreated(new Date().toLocaleTimeString());
+          })
+          .catch(error => {
+            console.error("Error fetching data:", error);
+          });
+      };
+
+      // Fetch data on component mount
+      useEffect(() => {
+        fetchData();
+      }, []);
+
+      return (
+        <div>
+          <header>
+            <h1>CO2 Monitor</h1>
+          </header>
+          <h2>CO<sub>2</sub> monitor {dateCreated}</h2>
+          <div className="third">
+            <img src="img/clouds.jpg" alt="Circuit boards" />
+          </div>
+          <div className="two-thirds" id="timetable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>ID</th>
+                  <th>CO2 [ppm]</th>
+                  <th>VCO [ppm]</th>
+                  <th>Resistance</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sessions.map(session => (
+                  <tr key={session.entry_id}>
+                    <td>{new Date(session.created_at).toLocaleString()}</td>
+                    <td>{session.entry_id}</td>
+                    <td>{session.field1}</td>
+                    <td>{session.field2}</td>
+                    <td>{session.field3}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <input 
+              placeholder="Number of registers" 
+              value={reg} 
+              onChange={e => setReg(e.target.value)} 
+            />
+            <button onClick={() => fetchData(reg)}>Refresh</button>
+          </div>
+        </div>
+      );
+    }
+
+    // Render the React component
+    ReactDOM.render(<CO2Monitor />, document.getElementById("root"));
+  </script>
+</body>
+</html>

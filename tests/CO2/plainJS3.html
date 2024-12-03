@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO2 Monitor</title>
+  <link rel="stylesheet" href="CO2.css">
+</head>
+<body>
+  <header><h1>CO2 monitor</h1></header>
+  <h2>CO<sub>2</sub> monitor <span id="dateCreated"></span></h2>
+  
+  <div class="third"><img src="img/clouds.jpg" alt="Circuit boards" /></div>
+  
+  <div class="two-thirds" id="timetable">
+    <table id="sessionsTable">
+      <thead>
+        <tr><th>Time</th><th>ID</th><th>CO2 [ppm]</th><th>VCO [ppm]</th><th>Resistance</th></tr>
+      </thead>
+      <tbody id="sessionsList">
+        <!-- Session rows will be added here dynamically -->
+      </tbody>
+    </table>
+    <input type="number" id="regInput" placeholder="Number of registers" value="10">
+    <button id="refreshButton">Refresh</button>
+  </div>
+        <template id="sessionTemplate">
+          <tr>
+            <td class="time"></td>
+            <td class="id"></td>
+            <td class="co2"></td>
+            <td class="vco"></td>
+            <td class="resistance"></td>
+          </tr>
+        </template>
+</body>
+
+  <script>
+    // Function to fetch data from the Thingspeak API
+    function fetchData(registerCount = 6) {
+      const url = `https://api.thingspeak.com/channels/1573872/feed.json?&offset=0&results=${registerCount}`;
+      
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          updateSessions(data.feeds);
+          updateTime();
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
+    }
+
+    // Function to update the sessions table with the fetched data
+    function updateSessions(sessions) {
+      const sessionsList = document.getElementById('sessionsList');
+
+      // Get the row template
+      var template = document.getElementsByTagName("template")[0];
+      sessionsList.innerHTML = ''; // Clear existing sessions
+
+      sessions.forEach(session => {
+        const row = template.content.cloneNode(true); // Clone the template content
+        
+        // Populate the row with session data
+        row.querySelector('.time').textContent = new Date(session.created_at).toLocaleString();
+        row.querySelector('.id').textContent = session.entry_id;
+        row.querySelector('.co2').textContent = session.field1;
+        row.querySelector('.vco').textContent = session.field2;
+        row.querySelector('.resistance').textContent = session.field3;
+
+        // Append the new row to the table
+        sessionsList.appendChild(row);
+      });
+    }
+
+    // Function to update the date and time when the data is fetched
+    function updateTime() {
+      const dateCreated = new Date().toLocaleTimeString();
+      document.getElementById('dateCreated').innerText = dateCreated;
+    }
+
+    // Event listener for the refresh button
+    document.getElementById('refreshButton').addEventListener('click', function() {
+      const reg = document.getElementById('regInput').value || 10;
+      fetchData(reg);
+    });
+
+    // Initialize by fetching data once the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      fetchData(); // Fetch the initial data when the page is ready
+    });
+  </script>
+</html>

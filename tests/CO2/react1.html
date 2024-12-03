@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple React App</title>
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const title = 'Welcome to React';
+      const message = 'Simple React application';
+
+      // Update the existing elements
+      ReactDOM.render(title, document.getElementById('title'));
+      ReactDOM.render(message, document.getElementById('message'));
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <h1 id="title"></h1>
+    <p id="message"></p>
+  </div>
+</body>
+</html>
