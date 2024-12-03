@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html ng-app>
+  <head>
+    <title>CO2 monitor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script>
+    // NOTE: Because this example loads external data it will not work locally in some browsers
+    // You can try it online at http://javascriptbook.com/code/c09 
+    // or run it on your own web server
+    function TimetableCtrl($scope, $http) {
+      $scope.reg = "10";
+      $http.get('https://api.thingspeak.com/channels/1573872/feed.json?&amp;offset=0&amp;results=6')
+      .success(function(data) {
+        $scope.sessions = data.feeds;
+        $scope.writeTime(data);
+        })
+      .error(function(data) { console.log('error'); });
+      $scope.refresh = function () {
+        console.log("refresh");
+        $http.get('https://api.thingspeak.com/channels/1573872/feed.json?&amp;offset=0&amp;results=' + $scope.reg)
+          .success(function(data) {
+            $scope.sessions = data.feeds;
+            $scope.writeTime(data);
+            })
+          .error(function(data) { console.log('error'); });
+        }
+        $scope.writeTime = function (data) {
+            var d = new Date();
+            $scope.date_created = d.toLocaleTimeString();
+            console.log(data.feeds.length);
+            console.log(data.feeds[data.feeds.length-1].created_at);
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="CO2.css">
+  </head>
+  <body ng-controller="TimetableCtrl">
+    <header><h1>CO2 monitor</h1></header>
+    <h2>CO<sub>2</sub> monitor {{ date_created }}</h2>
+    <div class="third"><img src="img/clouds.jpg" alt="Circuit boards" /></div>
+    <div class="two-thirds" id="timetable">
+      <table>
+        <tr><th>time</th><th>id</th><th>CO2[ppm]</th><th>VCO[ppm]</th><th>Resistencia</th></tr>
+        <tr ng-repeat="session in sessions">
+          <td>{{ session.created_at  | date :"yyyy/MM/dd HH:mm:ss" }}</td>
+          <td>{{ session.entry_id }}</td>
+          <td>{{ session.field1 }}</td>
+          <td>{{ session.field2 }}</td>
+          <td>{{ session.field3 }}</td>
+        </tr>
+      </table>
+        <input placeholder="Number of registers" ng-model="reg" >
+        <button ng-click="refresh()" >Refresh</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+   <script>
+       function MainController($scope) {
+           $scope.title = 'Welcome to Angular';
+           $scope.message = 'Simple Angular application';
+       }
+       
+       angular.module('myApp', [])
+        .controller('MainController', MainController);
+   </script>
+   <title>Simple Angular App</title>
+</head>
+<body ng-app="myApp" ng-controller="MainController">
+   <div>
+       <h1>{{title}}</h1>
+       <p>{{message}}</p>
+   </div>
+
+
+</body>
+</html>
