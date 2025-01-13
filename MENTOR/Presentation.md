@@ -43,6 +43,7 @@ Clara Orbe,
 Doctoranda
 
 **Previous members**
+
 Kevin  Michael Calderón Maceda,
 Doctorando
 
