@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso IngenIA</title>
+    <style>
+        :root {
+            --tecnun-red: #800020;
+            --tecnun-red-hover: #5A0016;
+            --bg-light: #F8F9FA;
+            --card-bg: #FFFFFF;
+            --text-main: #212529;
+            --text-muted: #6C757D;
+            --border-color: #E9ECEF;
+            --accent-gold: #C5A059;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header corporativo Tecnun */
+        header {
+            background-color: var(--tecnun-red);
+            color: white;
+            padding: 2rem 1rem;
+            border-bottom: 4px solid var(--accent-gold);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .brand-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .brand-subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .nav-tag {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Header */
+        .hero {
+            background-color: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 2.5rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: var(--tecnun-red);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            color: var(--tecnun-red);
+            margin-bottom: 0.8rem;
+            line-height: 1.2;
+        }
+
+        .hero-lead {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 900px;
+        }
+
+        /* Grid de Noticias */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem 3rem 1rem;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 1.8rem;
+        }
+
+        /* Tarjeta de Noticia */
+        .news-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+        }
+
+        .card-header {
+            padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+        }
+
+        .category {
+            font-weight: 700;
+            color: var(--tecnun-red);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.8rem;
+            line-height: 1.35;
+        }
+
+        /* Ponente con foto */
+        .speaker-box {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            background-color: var(--bg-light);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+        }
+
+        .speaker-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-gold);
+            flex-shrink: 0;
+            background-color: #E9ECEF;
+        }
+
+        .speaker-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .speaker-name {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .speaker-role {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .card-body {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-text {
+            font-size: 0.92rem;
+            color: #495057;
+            margin-bottom: 1rem;
+        }
+
+        .highlights-list {
+            background-color: var(--bg-light);
+            padding: 0.8rem 1rem;
+            border-left: 3px solid var(--tecnun-red);
+            border-radius: 0 4px 4px 0;
+            font-size: 0.85rem;
+        }
+
+        .highlights-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .highlights-list li {
+            margin-bottom: 0.3rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .highlights-list li::before {
+            content: "•";
+            color: var(--tecnun-red);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1A1A1A;
+            color: #ADB5BD;
+            padding: 2rem 1rem;
+            font-size: 0.85rem;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        footer strong {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div>
+                <div class="brand-title">Tecnun · Universidad de Navarra</div>
+                <div class="brand-subtitle">Escuela de Ingeniería | Grupo de Innovación Docente GID IngenIA</div>
+            </div>
+            <div class="nav-tag">Curso IngenIA 2026/div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <span class="hero-badge">Sesiones</span>
+            <h1 class="hero-title">Curso IngenIA: Formación en Inteligencia Artificial para la Ingeniería</h1>
+            <p class="hero-lead">Sesiones del curso IngenIA para la innovación y formación en Inteligencia Artificial en 2026.</p>
+        </div>
+    </section>
+
+    <main class="main-container">
+        <div class="news-grid">
+
+            <!-- Sesión 0 -->
+            <article class="news-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="category">Sesión 0 · Presentación</span>
+                        <time>18/06/2026</time>
+                    </div>
+                    <h2 class="card-title">Presentación del Grupo de Innovación Docente IngenIA</h2>
+                    <div class="speaker-box">
+                        <img class="speaker-img" src="https://en.tecnun.unav.edu/documents/10174/21502076/nicolas-serrano.jpg/2fee0098-c71f-cd2a-820a-8dc6eb12cc2a?t=1584984335000" alt="Nicolás Serrano">
+                        <div class="speaker-info">
+                            <span class="speaker-name">Nicolás Serrano</span>
+                            <span class="speaker-role">Profesor Titular de Tecnun</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Presentación del grupo para el estudio y formación en metodologías, evaluaciones y contenidos en la Era de la Inteligencia Artificial.</p>
+                    <div class="highlights-list">
+                        <ul>
+                            <li>Impacto de la IA en el trabajo y la educación.</li>
+                            <li>Fases del proyecto de IngenIA.</li>
+                            <li>Formación y grupos de trabajo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sesión 1 -->
+            <article class="news-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="category">Sesión 1 · Generación Visual</span>
+                        <time>06/05/2026</time>
+                    </div>
+                    <h2 class="card-title">Experimentando con IAs que crean imágenes</h2>
+                    <div class="speaker-box">
+                        <img class="speaker-img" src="https://www.unav.edu/documents/10174/29829809/santos_garcia_javier.jpg/506031ef-7d0e-3e81-d273-fc7b4e56037e?t=1619946120535" alt="Javi Santos">
+                        <div class="speaker-info">
+                            <span class="speaker-name">Javi Santos</span>
+                            <span class="speaker-role">Catedrático de Tecnun</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Taller práctico de creación de imágenes con IAs. Comparación de capacidades de distintas IAs.</p>
+                    <div class="highlights-list">
+                        <ul>
+                            <li>Uso contextual de Magnific, Pixa, Leonardo y Grok.</li>
+                            <li>Técnicas avanzadas de modificación y retoque de prompts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sesión 2 -->
+            <article class="news-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="category">Sesión 2 · Gestión del Conocimiento</span>
+                        <time>17/09/2026</time>
+                    </div>
+                    <h2 class="card-title">Masterclass Gemini Notebook: Asistentes de investigación RAG</h2>
+                    <div class="speaker-box">
+                        <img class="speaker-img" src="https://celulascreativas.eidedesign.eus/wp-content/uploads/2023/12/mabell.jpg" alt="Mabel Rodríguez">
+                        <div class="speaker-info">
+                            <span class="speaker-name">Mabel Rodríguez</span>
+                            <span class="speaker-role">Profesora e Investigadora</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Uso de Gemini Notebook para organizar fuentes documentales sin alucinaciones, generar material de estudio estructurado y ayudar en la investigación.</p>
+                    <div class="highlights-list">
+                        <ul>
+                            <li>Creación de guías interactivas, síntesis y rúbricas.</li>
+                            <li>Trazabilidad directa con las fuentes originales cargadas.</li>
+                            <li>Integración entre Gemini Notebook y modelos de lenguaje generalistas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sesión 3 -->
+            <article class="news-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="category">Sesión 3 · Productividad Docente</span>
+                        <time>22/09/2026</time>
+                    </div>
+                    <h2 class="card-title">Usos prácticos de la IA para no programadores</h2>
+                    <div class="speaker-box">
+                        <img class="speaker-img" src="1762333237350.jpg" alt="Adrián Irazu">
+                        <div class="speaker-info">
+                            <span class="speaker-name">Adrián Irazu</span>
+                            <span class="speaker-role">Especialista en IA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Conceptos de LLMs: tokens, niveles de autonomía y diseño estructurado de prompts para el apoyo en tareas docentes y diarias.</p>
+                    <div class="highlights-list">
+                        <ul>
+                            <li>Los 5 niveles de autonomía: del chat convencional a los agentes.</li>
+                            <li>Estructura de prompt: Rol + Contexto + Tarea + Formato.</li>
+                            <li>Estrategias de verificación.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sesión 4 -->
+            <article class="news-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="category">Sesión 4 · Simuladores Web</span>
+                        <time>25/09/2026</time>
+                    </div>
+                    <h2 class="card-title">Formatos y herramientas: Creación de simuladores web</h2>
+                    <div class="speaker-box">
+                        <img class="speaker-img" src="https://en.tecnun.unav.edu/documents/10174/21502076/nicolas-serrano.jpg/2fee0098-c71f-cd2a-820a-8dc6eb12cc2a?t=1584984335000" alt="Nicolás Serrano">
+                        <div class="speaker-info">
+                            <span class="speaker-name">Nicolás Serrano</span>
+                            <span class="speaker-role">Profesor de Tecnun</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Construcción interactiva de recursos pedagógicos aprovechando la capacidad de los LLM para generar código estructurado (HTML, JS, CSS) y despliegue en la Web.</p>
+                    <div class="highlights-list">
+                        <ul>
+                            <li>Formatos de entrada y salida para LLMs.</li>
+                            <li>Agentes de código en entornos de desarrollo VS Code.</li>
+                            <li>Desarrollo de simulaciones interactivas para conceptos de ingeniería.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sesión 5 -->
+            <article class="news-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="category">Sesión 5 · Agentes Autónomos</span>
+                        <time>29/06/2026</time>
+                    </div>
+                    <h2 class="card-title">Agentes de IA en la Organización e Investigación</h2>
+                    <div class="speaker-box">
+                        <img class="speaker-img" src="https://portalcientifico.unav.edu/img/uploaded/58579C2A249273102F25143E9074C8BB.jpg" alt="Ángel Rubio">
+                        <div class="speaker-info">
+                            <span class="speaker-name">Ángel Rubio</span>
+                            <span class="speaker-role">Profesor e Investigador</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Transición hacia agentes capaces de interactuar con el sistema operativo local, corregir errores en bucle y ejecutar flujos de trabajo científicos de alta complejidad.</p>
+                    <div class="highlights-list">
+                        <ul>
+                            <li>Modelos y entornos: Claude Code, Anti Gravity y Codex.</li>
+                            <li>Análisis en imagen médica (TAC/PET) y gestión inteligente de correo.</li>
+                            <li>Conexión SSH autónoma a clústeres de supercomputación (HPC).</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sesión 6 -->
+            <article class="news-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="category">Sesión 6 · Humanismo y Ética</span>
+                        <time>02/10/2026</time>
+                    </div>
+                    <h2 class="card-title">La Encíclica Magnifica humanitas y la Inteligencia Artificial</h2>
+                    <div class="speaker-box">
+                        <img class="speaker-img" src="https://portalcientifico.unav.edu/img/uploaded/58579C2A249273102F25143E9074C8BB.jpg" alt="Ángel Rubio">
+                        <div class="speaker-info">
+                            <span class="speaker-name">Ángel Rubio</span>
+                            <span class="speaker-role">Profesor e Investigador</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Reflexión sobre el documento Magisterial relativo a la IA, destacando la importancia de dignidad de la persona sobre el avance tecnológico.</p>
+                    <div class="highlights-list">
+                        <ul>
+                            <li>La técnica con propósito: orientación al bien común y servicio.</li>
+                            <li>La doctrina socil de la Iglesis.</li>
+                            <li>Responsabilidad ética en el uso y desarrollo de la IA.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Tecnun · Escuela de Ingeniería</strong> | Universidad de Navarra</p>
+        <p>Paseo de Manuel Lardizábal, 13, 20018 Donostia-San Sebastián, Gipuzkoa</p>
+    </footer>
+
+</body>
+</html>
