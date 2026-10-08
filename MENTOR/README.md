@@ -6,5 +6,6 @@ Cursos y sesiones de [MENTOR](http://mentor.tecnun.es)
 -	[Jornadas tecnun 2020](https://sites.google.com/theflippedclassroom.es/jornadastecnun2020)
 -	[Creación de Contenido Digital](http://www.nicolasserrano.com/CCD.html )
 -	Sesión sobre Innovación Educativa y Metodologías docentes. 1 de diciembre de 2023
+-	[ChatGPT for Engineers (OpenAI API)](https://www.nicolasserrano.com/r?//www.nicolasserrano.com/digital/APIChatGPTv1.3.md)
 -	[Sesión LLMs in Learning - Tecnun - 15-01-2025](https://www.nicolasserrano.com/r?//www.nicolasserrano.com/digital/LLMinLearning_v1.2b.md)
 -	[Curso IngenIA: Formación en Inteligencia Artificial para la Ingeniería. Septiembre 2026](https://www.nicolasserrano.com/tools/IngenIA/sesiones2026.html)
